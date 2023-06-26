@@ -97,6 +97,21 @@ main .home_text button:hover {
 .home_text button a {
   color: var(--light-color);
 }
+@keyframes moveElement {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#home .home_text {
+  animation: moveElement 2s infinite;
+}
 
 /* ===================  About section  =================*/
 
@@ -235,6 +250,24 @@ main .home_text button:hover {
   transition: background-color 0.3s ease;
   background-color: #ffb937;
 }
+.about-description .images img,
+.about-description h4,
+.about-description h1,
+.about-description p {
+  animation: moveInLeft 3s ease-out forwards;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /*======================  menu section  ========================*/
 
 .container .text_menu h2 {
@@ -253,6 +286,20 @@ main .home_text button:hover {
 }
 .card .card-body .btn {
   margin-bottom: 0%;
+}
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s, transform 1s;
+}
+
+.card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 /*  ============== Booking Section  =================*/

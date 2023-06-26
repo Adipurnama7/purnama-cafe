@@ -156,6 +156,7 @@
     </ul>
   </div>
 </nav>
+<script src="index.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-eZj6fzhoHB5UuN8ve1BAd9NlJp6t/Hdk6nlJoqL42dt4OEXaTTurH6iS2sAwAVD0BRs3yB6PgJhOKZB+G9oGZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
