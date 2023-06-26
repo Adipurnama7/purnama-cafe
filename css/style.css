@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-color: #0d1d49;
+  --light-color: #fff;
+  --dark-color: #e3b316;
+  --green: #27ae60;
+  --white: #fff;
+  --border: 0.1rem solid var(--black);
+  --black: #333;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.5s ease;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* =================== navigasi =================== */
+.container .navbar-brand {
+  font-family: "Pacifico", cursive;
+  font-size: 25px;
+}
+
+.navbar {
+  background-color: var(--dark-color);
+}
+.container .navbar-brand {
+  color: var(--light-color);
+}
+
+header > nav > ul .active a {
+  color: var(--light-color);
+}
+ul li {
+  margin-left: 22px;
+  position: relative;
+}
+ul li:hover a {
+  color: var(--main-color);
+}
+ul li a {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--light-color);
+}
+/* ===============  home section  ===============*/
+.flex-center {
+  padding: 8%;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(12, 13, 16, 0.406), rgba(78, 84, 96, 0.453)), url(../img/coffeehouse-g0580d94f9_1920.jpg);
+  background-attachment: fixed;
+}
+main .home_text {
+  margin-top: 70px;
+}
+main .home_text h1 {
+  color: var(--light-color);
+  font-size: 65px;
+  line-height: 75px;
+  margin-top: -20px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+}
+main .home_text p {
+  color: var(--light-color);
+  max-width: 95%;
+}
+main .home_text button {
+  width: 220px;
+  height: 60px;
+  background-color: var(--dark-color);
+  border: none;
+  margin-top: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+main .home_text button:hover {
+  background-color: red;
+  transition: background-color 0.3s ease;
+}
+
+.home_text button a {
+  color: var(--light-color);
+}
+
+/* ===================  About section  =================*/
+
+.about {
+  padding: 30px 8% 0 8%;
+  margin-top: 0px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img-container {
+  width: 700px;
+  height: 700px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.img-container .images {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  height: 280px;
+}
+
+.images .img1 {
+  flex: 0.8;
+  margin-right: 15px;
+}
+.images .img1 img {
+  width: 100%;
+  height: 120%;
+}
+.images .img2 {
+  flex: 0.8;
+}
+.images .img2 img {
+  width: 75%;
+  height: auto;
+}
+
+.img-container .images2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-top: 10px;
+  width: 100%;
+  height: 280px;
+}
+.images2 .img1 {
+  flex: 0.8;
+  margin-right: 15px;
+}
+.images2 .img1 img {
+  width: 75%;
+  float: right;
+}
+.images2 .img2 {
+  flex: 0.8;
+}
+.images2 .img2 img {
+  width: 100%;
+  height: auto;
+}
+
+.about .about-description {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  height: auto;
+}
+.about-description h4 {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 200;
+  font-family: "Pacifico", cursive;
+  color: var(--main-color);
+}
+
+.about-description h1 {
+  font-size: 39px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 18px;
+}
+.about-description h1 i {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+.about-description .p1,
+.p2 {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.about-description .experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 120px;
+}
+.experience .exp-two-section {
+  width: 220px;
+  height: auto;
+  border-left: 5px solid var(--main-color);
+}
+
+.experience p {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.experience p span {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+}
+.about-description .button button {
+  width: 180px;
+  height: 60px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  color: var(--light-color);
+  cursor: pointer;
+}
+.about-description .button button:hover {
+  transition: background-color 0.3s ease;
+  background-color: #ffb937;
+}
+/*======================  menu section  ========================*/
+
+.container .text_menu h2 {
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 0%;
+}
+.container .display-3 {
+  font-size: 39px;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 18px;
+  margin-top: 100px;
+}
+.container .btn {
+  background-color: var(--main-color);
+}
+.card .card-body .btn {
+  margin-bottom: 0%;
+}
+
+/*  ============== Booking Section  =================*/
+
+.booking-section {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.booking-section .reservation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 500px;
+  padding: 40px 40px 0 40px;
+  background-color: var(--main-color);
+  color: var(--light-color);
+}
+
+.reservation h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 760;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.reservation .menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reservation .menu input {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 60px;
+  font-size: 16px;
+  color: var(--main-color);
+  padding-left: 10px;
+  border-radius: 2px;
+}
+.menu input[type="menu"] {
+  margin-left: 15px;
+}
+
+.reservation .data {
+  border-radius: 2px;
+  margin: 15px auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reservation .data input,
+select {
+  outline: none;
+  border: none;
+  width: 50%;
+  height: 60px;
+  font-size: 16px;
+  color: black;
+  padding: 0 10px;
+  border-radius: 2px;
+}
+.data input:nth-child(2) {
+  margin-left: 15px;
+}
+.data select {
+  margin-left: 15px;
+}
+textarea {
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 15px;
+}
+.reservation .reserve-button {
+  width: 100%;
+  height: 56px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+.booking-section button:hover {
+  background-color: #c82706;
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 1%;
+  }
+
+  .img-container {
+    max-width: 100%;
+  }
+
+  .about-description {
+    max-width: 50%;
+    text-align: center;
+  }
+
+  .about-description h1 {
+    font-size: 24px;
+  }
+}
+
+/* ==================data============ */
+.btn2 {
+  display: block;
+  width: 50%;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 50x;
+  padding: 5px 5px;
+  background: var(--green);
+  color: var(--white);
+  text-align: center;
+  margin-left: 25%;
+  text-decoration: none;
+}
+
+.btn2:hover {
+  background: var(--black);
+}
